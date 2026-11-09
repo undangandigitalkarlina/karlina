@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Undangan Pernikahan Karlina</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f8f0e3;
+      color: #795b37;
+      font-family: Georgia, serif;
+      text-align: center;
+    }
+    .undangan {
+      max-width: 450px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 90px 20px;
+      box-sizing: border-box;
+      background: linear-gradient(#fffaf2, #ebd5b4);
+    }
+    h1 { font-size: 46px; }
+    button {
+      background: #ad854c;
+      color: white;
+      border: 0;
+      padding: 15px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    #isi { display: none; }
+  </style>
+</head>
+<body>
+  <div class="undangan" id="pembuka">
+    <p>THE WEDDING OF</p>
+    <h1>Karlina & Pasangan</h1>
+    <p>Undangan Pernikahan</p>
+    <button onclick="buka()">Buka Undangan</button>
+  </div>
+
+  <div class="undangan" id="isi">
+    <h1>Karlina & Pasangan</h1>
+    <p>Dengan penuh kebahagiaan, kami
+    mengundang Anda untuk hadir pada
+    acara pernikahan kami.</p>
+    <h2>Hari Bahagia Kami</h2>
+    <p>Tanggal dan lokasi akan ditambahkan.</p>
+    <p>Terima kasih atas doa dan restu Anda.</p>
+  </div>
+
+  <script>
+    function buka() {
+      document.getElementById("pembuka").style.display = "none";
+      document.getElementById("isi").style.display = "block";
+    }
+  </script>
+</body>
+</html>
